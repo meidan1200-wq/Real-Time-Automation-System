@@ -1,0 +1,25 @@
+# ===============================
+# RobloxBotV2 - Dependencies
+# ===============================
+
+# --- Core functionality ---
+playwright==1.55.0        # Web automation (Chromium only; run: playwright install chromium)
+pywinauto==0.6.9          # Windows UI automation
+pynput==1.8.1             # Keyboard/mouse control
+pyautogui==0.9.54         # GUI automation & screenshots
+pygetwindow==0.0.9        # Manage OS windows
+psutil==7.1.1             # Process and system monitoring
+jsonschema==4.25.1        # JSON schema validation (data structure checks)
+
+# --- Image processing ---
+opencv_python==4.12.0.88  # Computer vision utilities
+pytesseract==0.3.13       # OCR (text recognition)
+mss==10.1.0               # Screen capture
+numpy==2.3.4              # Array & matrix operations
+
+# ===============================
+# Notes:
+# 1. After installing, run this to get only Chromium:
+#       playwright install chromium
+# 2. You can safely skip other browsers to save space.
+# ===============================

@@ -1,0 +1,20 @@
+{
+  "training_coordinates": {
+    "Attack": ,
+    "Defense": ,
+    "Ki": ,
+    "Agility": 
+  },
+  "status_player_coordinates": {
+    "Energy bar": ,
+    "Next Zenkai": ,
+    "Health": ,
+    "Training limit": ,
+    "Zenkai Button Text": 
+  },
+  "detectors": {
+    "Disconect": ,
+    "Internet_lost": ,
+    "Error_code": 
+  }
+}

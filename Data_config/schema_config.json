@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "training_coordinates": {
+      "type": "object",
+      "minProperties": 4,
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "top": {"type": "number"},
+            "left": {"type": "number"},
+            "width": {"type": "number"},
+            "height": {"type": "number"}
+          },
+          "required": ["top", "left", "width", "height"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status_player_coordinates": {
+      "type": "object",
+      "minProperties": 5,
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "top": {"type": "number"},
+            "left": {"type": "number"},
+            "width": {"type": "number"},
+            "height": {"type": "number"}
+          },
+          "required": ["top", "left", "width", "height"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "detectors": {
+      "type": "object",
+      "minProperties": 2,
+      "properties": {
+        "Error_code": {
+          "type": "object",
+          "properties": {
+            "top": {"type": "number"},
+            "left": {"type": "number"},
+            "width": {"type": "number"},
+            "height": {"type": "number"}
+          },
+          "required": ["top", "left", "width", "height"],
+          "additionalProperties": false
+        }
+      },
+      "patternProperties": {
+        "^(?!Error_code$).*": {
+          "type": "object",
+          "properties": {
+            "top": {"type": "number"},
+            "left": {"type": "number"},
+            "width": {"type": "number"},
+            "height": {"type": "number"}
+          },
+          "required": ["top", "left", "width", "height"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["training_coordinates", "status_player_coordinates", "detectors"],
+  "additionalProperties": false
+}

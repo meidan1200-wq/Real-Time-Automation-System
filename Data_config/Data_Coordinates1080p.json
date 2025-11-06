@@ -1,0 +1,22 @@
+{
+  "training_coordinates": {
+    "Attack": {"top": 21, "left": 758, "width": 122, "height": 49},
+    "Defense": {"top": 23, "left": 922, "width": 120, "height": 53},
+    "Ki": {"top": 23, "left": 1082, "width": 119, "height": 46},
+    "Agility": {"top": 21, "left": 602, "width": 118, "height": 55}
+  },
+  "status_player_coordinates": {
+    "Energy bar": {"top": 919, "left": 960, "width": 365, "height": 57},
+    "Next Zenkai": {"top": 580, "left": 638, "width": 254, "height": 65},
+    "Health": {"top": 905, "left": 599, "width": 362, "height": 51},
+    "Training limit": {"top": 411, "left": 1227, "width": 241, "height": 76},
+    "Zenkai Button Text": {"top": 709, "left": 603, "width": 314, "height": 74}
+  },
+  "detectors": {
+    "Disconect": {"top": 379, "left": 869, "width": 188, "height": 52},
+    "Internet_lost": {"top": 41, "left": 0, "width": 496, "height": 70},
+    "Error_code": {"top": 481, "left": 727, "width": 467, "height": 87}
+  }
+}
+
+
