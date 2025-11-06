@@ -75,7 +75,7 @@ An automated bot designed to retrieve, train, and optimize your stats in Roblox 
 
 - Safe exit protocols prevent corruption or repeated login loops.  
 - Always test in a controlled environment before full automation.  
-- Never share your authentication file.  
+- Never share your authentication or state file.  
 - If command keys (like **M** or **E**) don’t respond, wait briefly — Roblox may have a short input delay.
 
 ---
