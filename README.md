@@ -1,4 +1,4 @@
-##Real-Time Automation & Data Processor
+## Real-Time Automation & Data Processor
 
 An automation system designed for **real-time stat optimization and task management in a simulated environment**. Built to demonstrate multithreaded logic, asynchronous processing, and data-driven decision making.
 
