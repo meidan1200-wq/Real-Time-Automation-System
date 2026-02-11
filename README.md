@@ -1,109 +1,60 @@
-# Roblox Automation Player - Dragon ball Rage
+#Real-Time Automation & Data Processor
 
-An automated bot designed to retrieve, train, and optimize your stats in Roblox — including intelligent Zenaki boost handling, stat tracking, and automatic recovery from in-game errors.
-
----
-
-## ✨ Features
-
-- **Smart Stat Management** – Automatically analyzes stats and selects the lowest stat to train.  
-- **Zenaki Boost Automation** – Automatically updates Zenaki boost to allow progression to the next training level.  
-- **Continuous Training** – Keeps training until the final Zenaki boost and maximum stats are reached.  
-- **Level-Specific Adjustments** – Automatically uses the dragon when required for level 46 progression.  
-- **Error Handling** – Detects runtime errors and restarts the game when possible.  
-- **Safe Exit System** – Critical errors trigger an immediate and safe program termination.
+An automation system designed for **real-time stat optimization and task management in a simulated environment**. Built to demonstrate multithreaded logic, asynchronous processing, and data-driven decision making.
 
 ---
 
-## ⚙️ Setup
+## Key Features
 
-### Prerequisites
-
-- Python 3.8 or higher  
-- Playwright installed with **Chromium only**  
-- Roblox desktop version  
-- Proper coordinate capture setup  
-
----
-
-### Installation
-
-1. Clone or download the repository.  
-2. Install dependencies:  
-   ```bash
-   pip install -r requirements.txt
-   ```  
-3. Ensure **Chromium** is installed (no need for other browsers):  
-   ```bash
-   playwright install chromium
-   ```  
-4. Verify Chromium exists at:  
-   ```
-   %LOCALAPPDATA%\ms-playwright\chromium-1187
-   ```  
-   *(If missing, install via Playwright as shown above.)*
+* **Smart Resource Management** – Automatically tracks and optimizes target metrics to maximize efficiency.
+* **Boost & Enhancement Automation** – Monitors and applies resource enhancements to maintain optimal progression.
+* **Continuous Operation** – Multithreaded system executes tasks and data capture concurrently in real time.
+* **Dynamic Error Handling** – Detects runtime issues and recovers automatically or exits safely in critical cases.
+* **Configurable Parameters** – Allows easy adjustment of thresholds, coordinates, and operational limits via JSON configuration files.
 
 ---
 
-## 🧩 Setup Notes
+## Technologies Used
 
-- **Coordinate Setup** – Configure your coordinates in `coordinates_data.json` using the **Capture Coordinates** script.  
-  - 📍 **Training Limit** – To set this, capture any stat line from the training menu (e.g., “34M/50M”).  
-  - ⚙️ **Error_code** – Optional parameter;  
-
-- **Authentication Setup** – Add your **username and password** in `Authentication.json` to enable automatic recovery and login upon errors.  
-  - 🔒 Credentials are stored **locally only** and used strictly for login purposes.
-
-- **Game Preparation** – Ensure **all skills are reset** — otherwise, training may not behave as expected.  
-- Confirm that the in-game option “Make sure \\” is **set to off** before launching.
+* **Languages:** Python 3.8+
+* **Automation & Tools:** Playwright, Multithreading, JSON mapping, Logging & Error Handling
+* **Libraries:** MSS (real-time screen capture), OpenCV (image filtering), PyTesseract (text extraction)
+* **Development Practices:** Modular architecture, asynchronous programming (Async/Await), robust error management
 
 ---
 
-## 🧠 Clarifications & Instructions
+## Setup & Installation
 
-- To **start** the bot:
-  ```bash
-  python main.py
-  ```
-- To **pause** or **terminate**, press the **Delete** key.  
-- Level 46 requires using the **Dragon** for Zenaki updates.  
-- The bot automatically recovers from minor errors; critical ones will stop it safely.
-
----
-
-## ⚠️ Safety Notes
-
-- Safe exit protocols prevent corruption or repeated login loops.  
-- Always test in a controlled environment before full automation.  
-- Never share your authentication or state file.  
-- If command keys (like **M** or **E**) don’t respond, wait briefly — Roblox may have a short input delay.
-
----
-
-## 🧰 Troubleshooting
-
-### Chromium not found
-If Chromium is missing, reinstall it with:
+1. Clone or download the repository:
 ```bash
+git clone https://github.com/meidan1200-wq/Dragon-ball-Rage-Automator.git
+```
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
 playwright install chromium
 ```
-Then verify the path:
-```
-%LOCALAPPDATA%\ms-playwright\chromium-1187
-```
-
-### Playwright not installed
-If Playwright isn’t recognized, install it manually:
+3. Configure system parameters in `coordinates_data.json` and `Authentication.json`.
+4. Run the automation engine:
 ```bash
-pip install playwright
+python main.py
 ```
-
-### Authentication or coordinate errors
-Ensure that:
-- `Authentication.json` and `coordinates_data.json` exist in the project directory.  
-- File names and paths are correct.  
-- All credentials and coordinates are valid.
+5. **Pause or stop execution:** Press the `Delete` key.
 
 ---
 
-© 2025 Roblox Automation Player | Developed for automation and controlled stat training in Roblox Game Dragon Ball Rage.
+## Notes
+
+* Safe exit protocols prevent data corruption or unintended loops.
+* Always test in a controlled environment before full-scale execution.
+* Credentials are stored locally only and used strictly for authentication.
+
+---
+
+## Learning Outcomes
+
+* Design and implement **multithreaded automation pipelines**
+* Build **asynchronous systems** coordinating multiple input streams
+* Integrate **real-time data capture and processing**
+* Apply **robust error handling and recovery mechanisms**
+
