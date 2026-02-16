@@ -11,6 +11,7 @@ An automation system designed for **real-time stat optimization and task managem
 * **Continuous Operation** – Multithreaded system executes tasks and data capture concurrently in real time.
 * **Dynamic Error Handling** – Detects runtime issues and recovers automatically or exits safely in critical cases.
 * **Configurable Parameters** – Allows easy adjustment of thresholds, coordinates, and operational limits via JSON configuration files.
+* **Utilizes OCR** (Optical Character Recognition) to translate visual data into structured digital formats for real-time analysis.
 
 ---
 
@@ -27,7 +28,7 @@ An automation system designed for **real-time stat optimization and task managem
 
 1. Clone or download the repository:
 ```bash
-git clone https://github.com/meidan1200-wq/Dragon-ball-Rage-Automator.git
+git clone https://github.com/meidan1200-wq/Real-Time-Automation-System.git
 ```
 2. Install dependencies:
 ```bash
